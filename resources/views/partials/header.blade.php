@@ -195,7 +195,7 @@
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 logo col-header-left-home3">
                         <ul class="nav navbar-nav js-menubar hidden-xs hidden-sm homepage2 hidden-home3">
-                            <li class="level1 active dropdown style-home3-menu"><a href="#" class="color-home3">Home</a>
+                            <li class="level1 active dropdown style-home3-menu"><a href="/home" class="color-home3">Home</a>
                                 <!-- <span class="plus js-plus-icon"></span>
                                 <div class="menu-level-1 dropdown-menu style5">
                                     <ul class="level1">

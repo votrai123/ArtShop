@@ -85,10 +85,11 @@
     <div class="col-lg-7 col-md-6 col-sm-9 col-xs-12 owl-center">
         <div class="kids-st homepage2 kids-img-home-3">
             <div class="owl-carousel owl-theme owl-cate v2 js-owl-cate-hp1">
-                <img class="img-responsive" src="images/banner/banner3.jpg" alt="">
+            @foreach($slide1 as $sl1)
+                <img class="img-responsive" src="images/banner/{{$sl1->image}}" hight="540px" With="992px" alt="">
                 
-                    <img class="img-responsive" src="images/banner/banner2.jpg" alt="">
-                    
+                    <!-- <img class="img-responsive" src="images/banner/banner2.jpg" alt=""> -->
+            @endforeach
             </div>
         </div>
     </div>
