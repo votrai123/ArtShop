@@ -13,5 +13,8 @@
 
 Route::get('/', function () {
     // test
-    return view('partials.productdetail');
+    return view('partials.homepage');
 });
+Route::get('home', [ 
+    'as'=> 'home',
+    'uses'=>'Pages\\HomeController@getIndex']);
