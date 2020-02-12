@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // test
+    return view('partials.productdetail');
 });
