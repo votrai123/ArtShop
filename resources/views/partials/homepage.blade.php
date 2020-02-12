@@ -85,16 +85,16 @@
     <div class="col-lg-7 col-md-6 col-sm-9 col-xs-12 owl-center">
         <div class="kids-st homepage2 kids-img-home-3">
             <div class="owl-carousel owl-theme owl-cate v2 js-owl-cate-hp1">
-                <img class="img-responsive" src="images/img103.jpg" alt="">
+                <img class="img-responsive" src="images/banner/banner3.jpg" alt="">
                 
-                    <img class="img-responsive" src="images/img104.jpg" alt="">
+                    <img class="img-responsive" src="images/banner/banner2.jpg" alt="">
                     
             </div>
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 banner-right fix-pd-right-homepage3">
         <div class="img-home3">
-            <a class="plus-zoom hover-images" href=""><img class="img-responsive" src="images/img102.jpg" alt=""></a>
+            <a class="plus-zoom hover-images" href=""><img class="img-responsive" src="images/banner/Rbanner1.jpg" alt=""></a>
         </div>
     </div>
 </div>

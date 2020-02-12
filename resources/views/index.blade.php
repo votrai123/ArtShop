@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="Hover-master/Hover-master/css/hover-min.css">
+    <!-- <link rel="stylesheet" href="Hover-master/Hover-master/css/hover-min.css"> -->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">

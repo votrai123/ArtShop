@@ -1,5 +1,5 @@
     <!-- push menu-->
-    <!-- <div class="pushmenu menu-home5">
+    <div class="pushmenu menu-home5">
         <div class="menu-push">
             <span class="close-left js-close"><i class="ion-ios-close-empty f-40"></i></span>
             <div class="clearfix"></div>
@@ -123,7 +123,7 @@
                 <a href="#"><i class="fa fa-google-plus"></i></a>
             </div>
         </div>
-    </div> -->
+    </div>
     <header id="header" class="header-v2 header-home-3">
         <div class="container container-home-3 ctn-content">
             <div class="topbar hidden-xs hidden-sm homepage2 home1">
@@ -188,7 +188,7 @@
                     <div
                         class="col-lg-2 col-md-2 col-sm-2 col-xs-12 header col-header-left-home3 col2 flex justify-content-end">
                         <div class="logo logo-hp3">
-                            <a href="#"><img src="images/logo-2.png" alt="logo"></a>
+                            <a href="#"><img src="images/logo/logo.png" Width="170px" alt="logo"></a>
                             <i class="fa fa-bars icon-pushmenu js-push-menu icon-menu" aria-hidden="true"></i>
 
                         </div>
@@ -272,6 +272,7 @@
                                     </ul>
                                     <div class="clearfix"></div>
                                 </div>
+                                
                             </li>
 
                             <li class="level1 hassub dropdown style-home3-menu">
@@ -335,7 +336,7 @@
                             <li class="level1 dropdown hassub style-home3-menu">
                                 <a href="#" class="color-home3">Blogs</a>
                                 <span class="plus js-plus-icon"></span>
-                                <div
+                                <!-- <div
                                     class="menu-level-1 dropdown-menu style2 homepage2 dropdown-menu-home3 blog-megamenu">
                                     <ul class="level1">
                                         <li class="level2 col-4">
@@ -353,18 +354,18 @@
                                         </li>
                                     </ul>
                                     <div class="clearfix"></div>
-                                </div>
+                                </div> -->
                             </li>
                             <li class="level1 active dropdown style-home3-menu">
                                 <a href="#" class="color-home3 ">About us</a>
-                                <ul class="dropdown-menu menu-level-1 ab-st-h2">
+                                <!-- <ul class="dropdown-menu menu-level-1 ab-st-h2">
                                     <li class="level2"><a href="#" class="st-ab">About Us</a></li>
                                     <li class="level2"><a href="About-Us.html" target="_blank" title="Blog List">About
                                             Us</a></li>
                                     <li class="level2"><a href="About-Us-v2.html" target="_blank"
                                             title="Blog Gird">About Us 2</a></li>
 
-                                </ul>
+                                </ul> -->
                             </li>
                         </ul>
                     </div>
