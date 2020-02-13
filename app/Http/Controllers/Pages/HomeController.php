@@ -11,6 +11,7 @@ class HomeController extends Controller
     //
     public function getIndex() {
         $slide1 = DB::select('select * from Slide');
-     return view('partials.homepage',compact('slide1'));
+        $new_product = DB::select('select * from Products where ProNew in (1)');
+     return view('partials.homepage',compact('slide1','new_product'));
     }
 }

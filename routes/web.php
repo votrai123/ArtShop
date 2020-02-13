@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     // test
-    return view('partials.homepage');
+    return view('partials.productdetail');
 });
 Route::get('home', [ 
     'as'=> 'home',
