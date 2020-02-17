@@ -7,28 +7,26 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3col-xs-12 ft-logo ft-logo-home3">
                         <div class="logo-para">
-                            <a href="#"><img src="images/logo.png" alt="logo"></a>
+                            <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
                             <p><em><a href="#">Miukid is a premium eCommerce theme with<br>
                             advanced admin module.</a></em></p>
                         </div>
                         <div class="icon-para">
                             <ul>
-                                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Telephone: +84 988  992 085</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Email: lamhvdesigner@gmail.com</a></li>
+                                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Telephone: +84 924 360 370</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Email: thaonhu395@gmail.com</a></li>
                                 <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>8:00 - 19:00, Monday - Saturday,<br> 
                                 Sunday - closed</a></li>
                             </ul>
                         </div>
                         <div class="bytheme">
-                            <div class="bytheme2">
-                                <a href="#">Buy This Theme</a>
-                            </div>
+                            <!-- -->
                             <div class="icons-ft">
                                 <ul>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-vine" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100007325298662"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -124,8 +122,8 @@
         <div class="row">
             <div class="col-md-8 col-sm-8 col-xs-12">
                 <div class="fted-left">
-                    <p>Copyright © 2018 by </p>
-                    <a href="#">EngoTheme. </a>
+                    <p>Copyright © 2020 by </p>
+                    <a href="#">ArtShop. </a>
                     <span>All Rights Reserved.</span>
                 </div>
             </div>

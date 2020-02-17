@@ -56,7 +56,7 @@
                                     <li class="level3"><a href="#">On sale</a></li>
                                 </ul>
                             </li>
-                            <li class="level2"> 
+                            <li class="level2">
                                 <a href="#">Categories</a>
                                 <ul class="menu-level-2">
                                     <li class="level3"><a href="#" title="">Categories Full Width</a></li>
@@ -195,7 +195,8 @@
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 logo col-header-left-home3">
                         <ul class="nav navbar-nav js-menubar hidden-xs hidden-sm homepage2 hidden-home3">
-                            <li class="level1 active dropdown style-home3-menu"><a href="/home" class="color-home3">Home</a>
+                            <li class="level1 active dropdown style-home3-menu"><a href="/home"
+                                    class="color-home3">Home</a>
                                 <!-- <span class="plus js-plus-icon"></span>
                                 <div class="menu-level-1 dropdown-menu style5">
                                     <ul class="level1">
@@ -216,92 +217,52 @@
                                     <div class="clearfix"></div>
                                 </div> -->
                             </li>
-                            <li class="level1 dropdown hassub style-home3-menu"><a href="#"
-                                    class="color-home3">Bestseller <span class="fa fa-chevron-down"></span></a>
+                            <li class="level1 dropdown hassub style-home3-menu"><a href="#" class="color-home3">Danh
+                                    Sách<span class="fa fa-chevron-down"></span></a>
                                 <span class="plus js-plus-icon"></span>
                                 <div class="menu-level-1 dropdown-menu menu-st-hp3 bgr-megamenu">
                                     <ul class="level1">
+                                        @foreach($category as $cate)
                                         <li class="level2 col-4a">
-                                            <a href="#">Shop pages</a>
+                                            <a href="#">{{$cate->name}}</a>
                                             <ul class="menu-level-2">
-                                                <li class="level3"><a href="Shop-page-v1.html" target="_blank"
-                                                        title="">Shop Page 1</a></li>
-                                                <li class="level3"><a href="Shop-page-v2.html" target="_blank"
-                                                        title="">Shop Page 2</a></li>
-                                                <li class="level3"><a href="Shop-page-v3.html" target="_blank"
-                                                        title="">Shop Page 3</a></li>
-                                                <li class="level3"><a href="Shop-page-v4.html" target="_blank"
-                                                        title="">Shop Page 4</a></li>
-                                                <li class="level3"><a href="Shop-page-v5.html" target="_blank"
-                                                        title="">Shop Page 5</a></li>
-                                                <li class="level3"><a href="Shop-page-v6.html" target="_blank"
-                                                        title="">Shop Page 6</a></li>
-                                                <li class="level3"><a href="Shop-page-v7.html" target="_blank"
-                                                        title="">Shop Page 7</a></li>
-                                                <li class="level3"><a href="Shop-page-v8.html" target="_blank"
-                                                        title="">Shop Page 8</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level2 col-4a">
-                                            <a href="#">Products</a>
-                                            <ul class="menu-level-2">
-                                                <li class="level3"><a href="Product-details-v1.html" target="_blank"
-                                                        title="">Product 1</a></li>
-                                                <li class="level3"><a href="Product-details-v2.html" target="_blank"
-                                                        title="">Product 2</a></li>
-                                                <li class="level3"><a href="Product-details-v3.html" target="_blank"
-                                                        title="">Product 3</a></li>
-                                                <li class="level3"><a href="Product-details-v4.html" target="_blank"
-                                                        title="">Product 4</a></li>
-                                                <li class="level3"><a href="Product-details-v5.html" target="_blank"
-                                                        title="">Product 5</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level2 col-4a">
-                                            <a href="#">Other Pages</a>
-                                            <ul class="menu-level-2">
-                                                <li class="level3"><a href="Contact-Us.html" target="_blank"
-                                                        title="">Contact Us</a></li>
-                                                <li class="level3"><a href="Quickview.html" target="_blank"
-                                                        title="">Quick View</a></li>
-                                                <li class="level3"><a href="Popup-Newsletter.html" target="_blank"
-                                                        title="">Popup Newsletter</a></li>
-                                            </ul>
-                                        </li>
 
+                                                @foreach($typeproduct as $tp)
+                                                @if($cate->id==$tp->id_category)
+                                                <li class="level3"><a href="Shop-page-v1.html" target="_blank"
+                                                        title="">{{$tp->TypeName}}</a></li>
+                                                @endif
+                                                @endforeach
+
+                                            </ul>
+                                        </li>
+                                        @endforeach
                                     </ul>
                                     <div class="clearfix"></div>
                                 </div>
-                                
+
                             </li>
 
                             <li class="level1 hassub dropdown style-home3-menu">
-                                <a href="#" class="color-home3">Newarrival <span class="fa fa-chevron-down"></span></a>
-                                <div class="menu-level-1 dropdown-menu style3 homepage2">
-                                    <div class="row">
-                                        <div class="cate-item col-md-4 col-sm-12">
-                                            <div class="demo-img">
-                                                <a href="" class="effect-img3 plus-zoom">
-                                                    <img src="images/img86.jpg" alt="" class="img-reponsive">
-                                                </a>
-                                            </div>
-                                            <div class="demo-text text-center">New Trending '18</div>
-                                        </div>
-                                        <div class="cate-item col-md-4 col-sm-12">
-                                            <div class="demo-img">
-                                                <a class="effect-img3 plus-zoom" href=""><img src="images/img87.jpg"
-                                                        alt="" class="img-reponsive"></a>
-                                            </div>
-                                            <div class="demo-text text-center">New Lookbooks</div>
-                                        </div>
-                                        <div class="cate-item col-md-4 col-sm-12">
-                                            <div class="demo-img">
-                                                <a class="effect-img3 plus-zoom" href=""><img src="images/img86.jpg"
-                                                        alt="" class="img-reponsive"></a>
-                                            </div>
-                                            <div class="demo-text text-center">Onsale</div>
-                                        </div>
-                                    </div>
+                                <a href="#" class="color-home3">Bộ Sản Phẩm <span class="fa fa-chevron-down"></span></a>
+
+                                <div class="menu-level-1 dropdown-menu bgr-megamenu">
+                                    <ul class="level1">
+                                        <b>Bộ Sản Phẩm 3CE</b>
+                                        <li class="level2 col-4a">
+                                            <ul class="menu-level-2">
+                                                @foreach($category1 as $cate1)
+                                                @foreach($typeproduct as $tp)
+                                                @if($cate1->id==$tp->id_category)
+                                                <li class="level3"><a href="Shop-page-v1.html" target="_blank"
+                                                        title="">{{$tp->TypeName}}</a></li>
+                                                @endif
+                                                @endforeach
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
                                 </div>
                             </li>
                             <li class="level1 hassub dropdown style-home3-menu">
@@ -358,15 +319,8 @@
                             </li>
                             <li class="level1 active dropdown style-home3-menu">
                                 <a href="#" class="color-home3 ">About us</a>
-                                <!-- <ul class="dropdown-menu menu-level-1 ab-st-h2">
-                                    <li class="level2"><a href="#" class="st-ab">About Us</a></li>
-                                    <li class="level2"><a href="About-Us.html" target="_blank" title="Blog List">About
-                                            Us</a></li>
-                                    <li class="level2"><a href="About-Us-v2.html" target="_blank"
-                                            title="Blog Gird">About Us 2</a></li>
-
-                                </ul> -->
                             </li>
+
                         </ul>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-2 col-xs-12 header-center2 header-center-hom3">

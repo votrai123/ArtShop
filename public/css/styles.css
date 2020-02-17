@@ -7854,7 +7854,7 @@ span.star:before {
     margin-right: 0;
     border-right: 0; }
 .menu-level-1 .col-4a {
-  width: 22%;
+  width: 17%;
   float: left;
   margin-right: 80px; }
   .menu-level-1 .col-4a:last-child {
@@ -12905,8 +12905,8 @@ li.st-rv {
   background: #fff; }
 
 .bgr-megamenu {
-  background-image: url("../images/background.png");
-  background-position: right;
+  background-image: url("../images/banner/img_header1.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -19265,7 +19265,7 @@ img.img-st1.hp2.img-about {
   padding: 20px 0 20px 30px !important; }
   @media (max-width: 1440px) and (min-width: 1366px) {
     .menu-st-hp3 {
-      width: 150%; } }
+      width: 180%; } }
   .menu-st-hp3 li.level2.col-4a {
     padding: 45px;
     margin-right: 10px;
