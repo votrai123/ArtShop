@@ -112,7 +112,7 @@
             <div class="row">
                 <div class=" col-md-3 col-sm-3 col-xs-12">
                     <div class="new-arrival-content">
-                        <h1 class="widget-blog-title">New Arrival</h1>
+                        <h1 class="widget-blog-title">New Products</h1>
                         <div class="owl-carousel owl-theme js-owl-post post-home3">
                             <div class="item">
                                 <div class="product-item pro-v1 home1 product-home3home-3">
@@ -365,7 +365,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="monial monial-home3">
+                    <!-- <div class="monial monial-home3">
                         <div class="title-pro-v1 hp1">
                             <h3 class="related-title text-center hp1 hp2 texttitle-home-3">Testimonial</h3>
                         </div>
@@ -398,7 +398,7 @@
                                         Ipsum has been the industry's standard dummy text ever since the 1500s.</em></p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="new-arrival-content content-2 content-best-home3">
                         <h1 class="widget-blog-title">Bestseller</h1>
                         <div class="owl-carousel owl-theme js-owl-post post-home3">
@@ -733,24 +733,21 @@
                     </div>
                 </div>
                 <div class=" col-md-9 col-sm-9 col-xs-12 fix-pd-right-homepage3">
-                    <div class="bn3">
+                    <!-- <div class="bn3">
                         <a href="" class="hover-images"><img src="images/bn3.jpg" alt=""></a>
-                    </div>
+                    </div> -->
                     <div class="title-pro-v1 hp1">
                         <h3 class="related-title text-center hp1 hp2 texttitle-home-3">Fashion Products</h3>
                         <p><a class="view" href="">View All Products<i class="fa fa-angle-right"
                                     aria-hidden="true"></i></a></p>
                     </div>
                     <div class="fashion">
-                        <a href=""><img src="images/img105.jpg" alt=""></a>
+                        <a href=""><img src="images/img105.jpg" width="437px" hight="319px" alt=""></a>
                         <div class="ul-home3">
                             <ul>
-                                <li><a href="">clothings</a></li>
-                                <li><a href="">shoes</a></li>
-                                <li><a href="">backpack</a></li>
-                                <li><a href="">hat</a></li>
-                                <li><a href="">Accessories</a></li>
-                                <li><a href="">All Products</a></li>
+                                @foreach($category as $cate)
+                                <li><a href="">{{$cate->name}}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -979,12 +976,9 @@
                             <a href=""><img src="images/img106.jpg" alt=""></a>
                             <div class="ul-home3 toys">
                                 <ul>
-                                    <li><a href="">clothings</a></li>
-                                    <li><a href="">shoes</a></li>
-                                    <li><a href="">backpack</a></li>
-                                    <li><a href="">hat</a></li>
-                                    <li><a href="">Accessories</a></li>
-                                    <li><a href="">All Products</a></li>
+                                    @foreach($category as $cate)
+                                    <li><a href="">{{$cate->name}}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -1232,12 +1226,9 @@
                         <a href="" class=""><img src="images/img-hp3.png" alt=""></a>
                         <div class="ul-home3 edu">
                             <ul>
-                                <li><a href="">clothings</a></li>
-                                <li><a href="">shoes</a></li>
-                                <li><a href="">backpack</a></li>
-                                <li><a href="">hat</a></li>
-                                <li><a href="">Accessories</a></li>
-                                <li><a href="">All Products</a></li>
+                                @foreach($category as $cate)
+                                <li><a href="">{{$cate->name}}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -1451,12 +1442,9 @@
                         <a href="" class=""><img src="images/img-hp3.png" alt=""></a>
                         <div class="ul-home3 edu">
                             <ul>
-                                <li><a href="">clothings</a></li>
-                                <li><a href="">shoes</a></li>
-                                <li><a href="">backpack</a></li>
-                                <li><a href="">hat</a></li>
-                                <li><a href="">Accessories</a></li>
-                                <li><a href="">All Products</a></li>
+                                @foreach($category as $cate)
+                                <li><a href="">{{$cate->name}}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
