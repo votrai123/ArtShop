@@ -115,9 +115,10 @@
                         <h1 class="widget-blog-title">New Products</h1>
                         <div class="owl-carousel owl-theme js-owl-post post-home3">
                             <div class="item">
+                            @foreach($new_product1 as $new1)
                                 <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
-                                        <a class="hover-images" href=""><img src="images/img50.jpg" alt=""
+                                        <a class="hover-images" href=""><img src="{{$new1->ProImage}}" alt=""
                                                 class="img-responsive"></a>
                                         <div class="sale-img shop1 shop2 st-v2">
                                             <div class="before shop1 v2 pro-v1 st-v2 hp1 hp3-before"></div>
@@ -125,7 +126,7 @@
                                         <div class="ribbon zoa-hot shop-v1 v2 hp1 ribbon-home3"><span>-50%</span></div>
                                     </div>
                                     <div class="sale-para2 shop-1 pro-v1 hp2-para arrival-para arii-home-3">
-                                        <p><a href="#">Animal Print Sweat-shirt</a></p>
+                                        <p><a href="#">{{$new1->ProName}}</a></p>
                                         <div class="star-icons icons-home3">
                                             <ul>
                                                 <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -142,7 +143,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-item pro-v1 home1 product-home3home-3">
+                            @endforeach
+                                <!-- <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
                                         <a class="hover-images" href=""><img src="images/img108.jpg" alt=""
                                                 class="img-responsive"></a>
@@ -195,12 +197,13 @@
                                             <del>$42.00</del>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="item">
+                            @foreach($new_product2 as $new2)
                                 <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
-                                        <a class="hover-images" href=""><img src="images/img113.jpg" alt=""
+                                        <a class="hover-images" href=""><img src="{{$new2->ProImage}}" alt=""
                                                 class="img-responsive"></a>
                                         <div class="sale-img shop1 shop2 st-v2">
                                             <div class="before shop1 v2 pro-v1 st-v2 hp1 hp3-before"></div>
@@ -208,7 +211,7 @@
                                         <div class="ribbon zoa-hot shop-v1 v2 hp1 ribbon-home3"><span>-50%</span></div>
                                     </div>
                                     <div class="sale-para2 shop-1 pro-v1 hp2-para arrival-para arii-home-3">
-                                        <p><a href="#">Animal Print Sweat-shirt</a></p>
+                                        <p><a href="#">{{$new2->ProName}}</a></p>
                                         <div class="star-icons icons-home3">
                                             <ul>
                                                 <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -225,7 +228,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-item pro-v1 home1 product-home3home-3">
+                            @endforeach
+                                <!-- <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
                                         <a class="hover-images" href=""><img src="images/img112.jpg" alt=""
                                                 class="img-responsive"></a>
@@ -278,9 +282,9 @@
                                             <del>$42.00</del>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
-                            <div class="item">
+                            <!-- <div class="item">
                                 <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
                                         <a class="hover-images" href=""><img src="images/img109.jpg" alt=""
@@ -362,7 +366,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- <div class="monial monial-home3">
