@@ -17,7 +17,6 @@
                                     <li class="level2"><a href="home1.html" title="">Demo 1</a></li>
                                     <li class="level2"><a href="home2.html" title="">Demo 2</a></li>
                                     <li class="level2"><a href="home3.html" title="">Demo 3</a></li>
-
                                 </ul>
                             </li>
                             <li class="level1 active dropdown"><a href="#">Shoes</a></li>
@@ -28,7 +27,6 @@
                                     <li class="level2"><a href="aboutus.html" title="About Us ">About Us </a></li>
                                     <li class="level2"><a href="contactus.html" title="Contact">Contact</a></li>
                                     <li class="level2"><a href="faq.html" title="FAQs">FAQs</a></li>
-
                                 </ul>
                             </li> -->
                             @foreach($category as $cate)
@@ -118,7 +116,7 @@
                             @foreach($new_product1 as $new1)
                                 <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
-                                        <a class="hover-images" href=""><img src="{{$new1->ProImage}}" alt=""
+                                        <a class="hover-images" href=""><img src="images/product/{{$new1->ProImage}}" alt=""
                                                 class="img-responsive"></a>
                                         <div class="sale-img shop1 shop2 st-v2">
                                             <div class="before shop1 v2 pro-v1 st-v2 hp1 hp3-before"></div>
@@ -203,7 +201,7 @@
                             @foreach($new_product2 as $new2)
                                 <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
-                                        <a class="hover-images" href=""><img src="{{$new2->ProImage}}" alt=""
+                                        <a class="hover-images" href=""><img src="images/product/{{$new2->ProImage}}" alt=""
                                                 class="img-responsive"></a>
                                         <div class="sale-img shop1 shop2 st-v2">
                                             <div class="before shop1 v2 pro-v1 st-v2 hp1 hp3-before"></div>
@@ -288,7 +286,7 @@
                             @foreach($new_product3 as $new3)
                                 <div class="product-item pro-v1 home1 product-home3home-3">
                                     <div class="product-img arrival-img img-home-3">
-                                        <a class="hover-images" href=""><img src="{{$new3->ProImage}}" alt=""
+                                        <a class="hover-images" href=""><img src="images/product/{{$new3->ProImage}}" alt=""
                                                 class="img-responsive"></a>
                                         <div class="sale-img shop1 shop2 st-v2">
                                             <div class="before shop1 v2 pro-v1 st-v2 hp1 hp3-before"></div>
@@ -743,7 +741,7 @@
                         <a href="" class="hover-images"><img src="images/bn3.jpg" alt=""></a>
                     </div> -->
                     <div class="title-pro-v1 hp1">
-                        <h3 class="related-title text-center hp1 hp2 texttitle-home-3">Fashion Products</h3>
+                        <h3 class="related-title text-center hp1 hp2 texttitle-home-3">Lip</h3>
                         <p><a class="view" href="">View All Products<i class="fa fa-angle-right"
                                     aria-hidden="true"></i></a></p>
                     </div>
@@ -760,9 +758,10 @@
                     <div class="featured-homepage1 home3">
                         <div class="product-related hp1 pro-home-3">
                             <div class="owl-carousel owl-theme owl-cate v2 js-owl-cate-feat-home3 owl-home3">
+                                @foreach($lip as $lip)
                                 <div class="product-item pro-v1 home1 product-home3">
                                     <div class="product-img product-img-home3">
-                                        <a class="" href=""><img src="images/img61.jpg" alt="" class="img-responsive"><i
+                                        <a class="" href=""><img src="images/product/{{$lip->ProImage}}" alt="" class="img-responsive"><i
                                                 class="fa fa-arrows" aria-hidden="true"></i><span class="quick">Quick
                                                 view</span></a>
                                         <div class="sale-img shop1 shop2">
@@ -782,7 +781,7 @@
                                         </div>
                                     </div>
                                     <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
-                                        <p><a href="#">Crepe Jacket With Pompom</a></p>
+                                        <p><a href="#">{{$lip->ProName}}</a></p>
                                         <div class="star-icons">
                                             <ul>
                                                 <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -799,7 +798,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-item pro-v1 home1">
+                                @endforeach
+                                <!-- <div class="product-item pro-v1 home1">
                                     <div class="product-img product-img-home3">
                                         <a class="" href=""><img src="images/img50.jpg" alt="" class="img-responsive"><i
                                                 class="fa fa-arrows" aria-hidden="true"></i><span class="quick">Quick
@@ -958,22 +958,22 @@
                                             <del>$42.00</del>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
                     </div>
-                    <div class="bn4-5 bn-4-5-home3">
+                    <!-- <div class="bn4-5 bn-4-5-home3">
                         <div class="bn4">
                             <a href="" class="hover-images"><img src="images/bn4.jpg" alt=""></a>
                         </div>
                         <div class="bn5">
                             <a href="" class="hover-images"><img src="images/bn5.jpg" alt=""></a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Toys -->
                     <div class="title-pro-v1 hp1">
-                        <h3 class="related-title text-center hp1 hp2 texttitle-home-3 toys">Toys</h3>
+                        <h3 class="related-title text-center hp1 hp2 texttitle-home-3 toys">Face</h3>
                         <p><a class="view" href="">View All Products<i class="fa fa-angle-right"
                                     aria-hidden="true"></i></a></p>
                     </div>
@@ -992,9 +992,10 @@
 
                             <div class="product-related hp1 pro-home-3">
                                 <div class="owl-carousel owl-theme owl-cate v2 js-owl-cate-feat-home3 owl-home3">
+                                    @foreach($face as $face)
                                     <div class="product-item pro-v1 home1 product-home3">
                                         <div class="product-img product-img-home3">
-                                            <a class="" href=""><img src="images/img108.jpg" alt=""
+                                            <a class="" href=""><img src="images/product/{{$face->ProImage}}" alt=""
                                                     class="img-responsive"><i class="fa fa-arrows"
                                                     aria-hidden="true"></i><span class="quick">Quick view</span></a>
                                             <div class="sale-img shop1 shop2">
@@ -1015,7 +1016,7 @@
                                             </div>
                                         </div>
                                         <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
-                                            <p><a href="#">Crepe Jacket With Pompom</a></p>
+                                            <p><a href="#">{{$face->ProName}}</a></p>
                                             <div class="star-icons">
                                                 <ul>
                                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
@@ -1038,7 +1039,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product-item pro-v1 home1">
+                                    @endforeach
+                                    <!-- <div class="product-item pro-v1 home1">
                                         <div class="product-img product-img-home3">
                                             <a class="" href=""><img src="images/img109.jpg" alt=""
                                                     class="img-responsive"><i class="fa fa-arrows"
@@ -1216,13 +1218,231 @@
                                                 <del>$42.00</del>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <!-- Education -->
+                    <div class="title-pro-v1 hp1">
+                        <h3 class="related-title text-center hp1 hp2 texttitle-home-3 education">Cheek</h3>
+                        <p><a class="view" href="">View All Products<i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="fashion">
+                        <a href="" class=""><img src="images/img-hp3.png" alt=""></a>
+                        <div class="ul-home3 edu">
+                            <ul>
+                                @foreach($category as $cate)
+                                <li><a href="">{{$cate->name}}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="featured-homepage1 home3">
+
+                        <div class="product-related hp1 pro-home-3">
+                            <div class="owl-carousel owl-theme owl-cate v2 js-owl-cate-feat-home3 owl-home3">
+                                @foreach($cheek as $cheek)
+                                <div class="product-item pro-v1 home1 product-home3">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/product/{{$cheek->ProImage}}" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2">
+                                            <div class="before shop1 v2 pro-v1 hp1  before-home3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 hp1 new-ribbon-home3"><span>New</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">{{$cheek->ProName}}</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                <!-- <div class="product-item pro-v1 home1">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img113.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2 st-v2">
+                                            <div class="before shop1 v2 pro-v1 st-v2 hp1 hp3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 v2 hp1 ribbon-25-home3 new-ribbon-home3">
+                                            <span>-25%</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Animal Print Sweatshirt</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item pro-v1 home1">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img114.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Printed T-Shirt</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item pro-v1 home1 product-home3">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img115.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2">
+                                            <div class="before shop1 v2 pro-v1 hp1  before-home3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 hp1 new-ribbon-home3"><span>New</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Knit Cardigan</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item pro-v1 home1 product-home3">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img111.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2">
+                                            <div class="before shop1 v2 pro-v1 hp1  before-home3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 hp1 new-ribbon-home3"><span>New</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Knit Cardigan</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Eye -->
                     <div class="title-pro-v1 hp1">
                         <h3 class="related-title text-center hp1 hp2 texttitle-home-3 education">Education</h3>
                         <p><a class="view" href="">View All Products<i class="fa fa-angle-right"
@@ -1438,7 +1658,223 @@
 
                         </div>
                     </div>
-                    <!-- đang test -->
+                    <!-- SkinCare -->
+                    <div class="title-pro-v1 hp1">
+                        <h3 class="related-title text-center hp1 hp2 texttitle-home-3 education">Education</h3>
+                        <p><a class="view" href="">View All Products<i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="fashion">
+                        <a href="" class=""><img src="images/img-hp3.png" alt=""></a>
+                        <div class="ul-home3 edu">
+                            <ul>
+                                @foreach($category as $cate)
+                                <li><a href="">{{$cate->name}}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="featured-homepage1 home3">
+
+                        <div class="product-related hp1 pro-home-3">
+                            <div class="owl-carousel owl-theme owl-cate v2 js-owl-cate-feat-home3 owl-home3">
+                                <div class="product-item pro-v1 home1 product-home3">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img112.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2">
+                                            <div class="before shop1 v2 pro-v1 hp1  before-home3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 hp1 new-ribbon-home3"><span>New</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Crepe Jacket With Pompom</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item pro-v1 home1">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img113.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2 st-v2">
+                                            <div class="before shop1 v2 pro-v1 st-v2 hp1 hp3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 v2 hp1 ribbon-25-home3 new-ribbon-home3">
+                                            <span>-25%</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Animal Print Sweatshirt</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item pro-v1 home1">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img114.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Printed T-Shirt</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item pro-v1 home1 product-home3">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img115.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2">
+                                            <div class="before shop1 v2 pro-v1 hp1  before-home3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 hp1 new-ribbon-home3"><span>New</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Knit Cardigan</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item pro-v1 home1 product-home3">
+                                    <div class="product-img product-img-home3">
+                                        <a class="" href=""><img src="images/img111.jpg" alt=""
+                                                class="img-responsive"><i class="fa fa-arrows"
+                                                aria-hidden="true"></i><span class="quick">Quick view</span></a>
+                                        <div class="sale-img shop1 shop2">
+                                            <div class="before shop1 v2 pro-v1 hp1  before-home3"></div>
+                                        </div>
+                                        <div class="ribbon zoa-hot shop-v1 hp1 new-ribbon-home3"><span>New</span></div>
+                                        <div class="product-button-group hp1 hp3">
+                                            <a href="#" class="zoa-btn zoa-quickview">
+                                                <span class="fa fa-shopping-bag"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-wishlist">
+                                                <span class="fa fa-balance-scale"></span>
+                                            </a>
+                                            <a href="#" class="zoa-btn zoa-addcart">
+                                                <span class="fa fa-heart"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sale-para2 shop-1 pro-v1 hp2-para home-3">
+                                        <p><a href="#">Knit Cardigan</a></p>
+                                        <div class="star-icons">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                                <li class="review"><a class="view" href=""><em>6 Review(s)</em></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-hp1 hp3">
+                                            <p>$36.00</p>
+                                            <del>$42.00</del>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Bộ Sản Phẩm 3CE -->
                     <div class="title-pro-v1 hp1">
                         <h3 class="related-title text-center hp1 hp2 texttitle-home-3 education">Education</h3>
                         <p><a class="view" href="">View All Products<i class="fa fa-angle-right"
@@ -1657,7 +2093,7 @@
                     <!-- Sign up to -->
                     <div class="sign-up">
                         <div class="miukid-hp3">
-                            <h4>Sign up to<span>Miukid</span></h4>
+                            <h4>Sign up to<span>ArtShop</span></h4>
                         </div>
                         <div class="form-home3">
                             <form class="form_newsletter hp1 sign-hp3" action="#" method="post">
