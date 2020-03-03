@@ -8,7 +8,7 @@
                     <div class="col-md-3 col-sm-3col-xs-12 ft-logo ft-logo-home3">
                         <div class="logo-para">
                             <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
-                            <p><em><a href="#">Miukid is a premium eCommerce theme with<br>
+                            <p><em><a href="#">ArtShop is a premium eCommerce theme with<br>
                             advanced admin module.</a></em></p>
                         </div>
                         <div class="icon-para">
