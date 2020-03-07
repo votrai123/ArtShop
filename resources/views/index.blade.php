@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>ArtShop - Mỹ Phẩm Hàn Quốc Chính Hãng</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('css/slick-theme.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
     <!-- <link rel="stylesheet" href="Hover-master/Hover-master/css/hover-min.css"> -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    <link href="{{asset('https://fonts.googleapis.com/css?family=Poppins:400,500,700')}}" rel="stylesheet">
+    <link href="{{asset('https://fonts.googleapis.com/css?family=Roboto:400,500,700')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -25,13 +25,13 @@
     
     @include('partials.footer')
 <a href="#" class="zoa-btn scroll_top"><i class="ion-ios-arrow-up"></i></a>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/countdown.js"></script>
-<script src="js/main.js"></script>
+<script src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')}}"></script>
+<script src="{{asset('js/jquery.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('js/slick.min.js')}}"></script>
+<script src="{{asset('js/countdown.js')}}"></script>
+<script src="{{asset('js/main.js')}}"></script>
 <script>
     $(document).ready(function() {
         $('.owl-carousel').owlCarousel({

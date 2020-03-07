@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3col-xs-12 ft-logo ft-logo-home3">
                         <div class="logo-para">
-                            <a href="#"><img src="images/logo/logo-2.png" alt="logo"></a>
+                            <a href="#"><img src="{{asset('images/logo/logo-2.png')}}" alt="logo"></a>
                             <p><em><a href="#">ArtShop is a premium eCommerce theme with<br>
                             advanced admin module.</a></em></p>
                         </div>
@@ -86,19 +86,19 @@
                         </div>
                         <div class="img-ul img-ul-home3">
                             <ul>
-                                <li><a href="#"><img src="images/img18.jpg" alt="img"></a></li>
-                                <li><a href="#"><img src="images/img19.jpg" alt="img"></a></li>
-                                <li><a href="#"><img src="images/img20.jpg" alt="img"></a></li>
-                                <li><a href="#"><img src="images/img21.jpg" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img18.jpg')}}" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img19.jpg')}}" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img20.jpg')}}" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img21.jpg')}}" alt="img"></a></li>
 
                             </ul>
                         </div>
                         <div class="img-ul img-ul-home3">
                             <ul>
-                                <li><a href="#"><img src="images/img22.jpg" alt="img"></a></li>
-                                <li><a href="#"><img src="images/img23.jpg" alt="img"></a></li>
-                                <li><a href="#"><img src="images/img24.jpg" alt="img"></a></li>
-                                <li><a href="#"><img src="images/img25.jpg" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img22.jpg')}}" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img23.jpg')}}" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img24.jpg')}}" alt="img"></a></li>
+                                <li><a href="#"><img src="{{asset('images/img25.jpg')}}" alt="img"></a></li>
                             </ul>
                         </div>
                         <div class="menu-ft menu-ft-home3">
@@ -130,11 +130,11 @@
             <div class="col-md-4 col-sm-4 col-xs-12 ">
                 <div class="fted-left two">
                     <ul>
-                        <li><a href="#"><img src="images/icon1.png" alt="icon"></a></li>
-                        <li><a href="#"><img src="images/icon2.png" alt="icon"></a></li>
-                        <li><a href="#"><img src="images/icon3.png" alt="icon"></a></li>
-                        <li><a href="#"><img src="images/icon4.png" alt="icon"></a></li>
-                        <li><a href="#"><img src="images/icon5.png" alt="icon"></a></li>
+                        <li><a href="#"><img src="{{asset('images/icon1.png')}}" alt="icon"></a></li>
+                        <li><a href="#"><img src="{{asset('images/icon2.png')}}" alt="icon"></a></li>
+                        <li><a href="#"><img src="{{asset('images/icon3.png')}}" alt="icon"></a></li>
+                        <li><a href="#"><img src="{{asset('images/icon4.png')}}" alt="icon"></a></li>
+                        <li><a href="#"><img src="{{asset('images/icon5.png')}}" alt="icon"></a></li>
                     </ul>
                 </div>
             </div>

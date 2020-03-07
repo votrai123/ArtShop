@@ -503,7 +503,7 @@
                         </div>
                     </div>
                     <!-- Blogs -->
-                    <div class="blogs blog-home3-owlnav">
+                    <!-- <div class="blogs blog-home3-owlnav">
                         <div class="title-pro-v1 hp1">
                             <h3 class="related-title text-center hp1 para-blogs">Blogs</h3>
                         </div>
@@ -579,7 +579,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class=" col-md-9 col-sm-9 col-xs-12 fix-pd-right-homepage3">
                     <!-- <div class="bn3">

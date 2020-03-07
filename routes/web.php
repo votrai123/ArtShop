@@ -11,13 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('haizzz', function () {
     // test
     return view('partials.productdetail');
 });
-Route::get('1', [ 
+Route::get('', [ 
     'as'=> 'home',
     'uses'=>'Pages\\HomeController@getIndex']);
-Route::get('home', [ 
-    'as'=> 'home',
-    'uses'=>'Pages\\HomeController@getIndex']);
+Route::get('/detailproduct/{id}', [ 
+    'as'=> 'detailproduct',
+    'uses'=>'Pages\\DetailProductController@getDetailproduct']);
+// Route::get('', [ 
+//     'as'=> 'home',
+//     'uses'=>'Pages\\HomeController@getIndex']);

@@ -136,7 +136,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-header-left-home3">
                         <div class="topbar-left default-home3">
                             <div class="a sms-hd">
-                                <a href="#"><img src="images/icon8.png" alt="icon">Sms Default welcome !</a>
+                                <a href="#"><img src="{{asset('images/icon8.png')}}" alt="icon">Sms Default welcome !</a>
                             </div>
                             <div class="topbar-social">
                                 <a href="#"><i class="fa fa-gift home3" aria-hidden="true"></i>Gift Vouchers</a>
@@ -188,7 +188,7 @@
                     <div
                         class="col-lg-2 col-md-2 col-sm-2 col-xs-12 header col-header-left-home3 col2 flex justify-content-end">
                         <div class="logo logo-hp3">
-                            <a href="#"><img src="images/logo/logo.png" Width="170px" alt="logo"></a>
+                            <a href="#"><img src="{{asset('images/logo/logo.png')}}" Width="170px" alt="logo"></a>
                             <i class="fa fa-bars icon-pushmenu js-push-menu icon-menu" aria-hidden="true"></i>
 
                         </div>
@@ -272,21 +272,21 @@
                                         <div class="cate-item col-md-4 col-sm-12">
                                             <div class="demo-img">
                                                 <a href="" class="effect-img3 plus-zoom">
-                                                    <img src="images/img109.jpg" alt="" class="img-reponsive">
+                                                    <img src="{{asset('images/img109.jpg')}}" alt="" class="img-reponsive">
                                                 </a>
                                             </div>
                                             <div class="demo-text text-center">New Trending '18</div>
                                         </div>
                                         <div class="cate-item col-md-4 col-sm-12">
                                             <div class="demo-img">
-                                                <a class="effect-img3 plus-zoom" href=""><img src="images/img110.jpg"
+                                                <a class="effect-img3 plus-zoom" href=""><img src="{{asset('images/img110.jpg')}}"
                                                         alt="" class="img-reponsive"></a>
                                             </div>
                                             <div class="demo-text text-center">New Lookbooks</div>
                                         </div>
                                         <div class="cate-item col-md-4 col-sm-12">
                                             <div class="demo-img">
-                                                <a class="effect-img3 plus-zoom" href=""><img src="images/img111.jpg"
+                                                <a class="effect-img3 plus-zoom" href=""><img src="{{asset('images/img111.jpg')}}"
                                                         alt="" class="img-reponsive"></a>
                                             </div>
                                             <div class="demo-text text-center">Onsale</div>
@@ -345,7 +345,7 @@
                                     <div class="cart-2">
                                         <div class="check-out">
                                             <div class="img-cart">
-                                                <a href="#" class="hover-images"><img src="images/img27.jpg"
+                                                <a href="#" class="hover-images"><img src="{{asset('images/img27.jpg')}}"
                                                         alt="img"></a>
                                             </div>
                                             <div class="para-cart">
@@ -359,7 +359,7 @@
                                         <br>
                                         <div class="check-out">
                                             <div class="img-cart">
-                                                <a href="#" class="hover-images"><img src="images/img28.jpg"
+                                                <a href="#" class="hover-images"><img src="{{asset('images/img28.jpg')}}"
                                                         alt="img"></a>
                                             </div>
                                             <div class="para-cart">
@@ -373,7 +373,7 @@
                                         <br>
                                         <div class="check-out bd-bt">
                                             <div class="img-cart">
-                                                <a href="#" class="hover-images"><img src="images/img29.jpg"
+                                                <a href="#" class="hover-images"><img src="{{asset('images/img29.jpg')}}"
                                                         alt="img"></a>
                                             </div>
                                             <div class="para-cart">
